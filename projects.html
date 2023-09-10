@@ -14,9 +14,19 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel = "stylesheet" href = "styles.css">
-
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     </head>
-    <body>        
+    <body class = "preload">
+        <div class = "loader-wrapper">
+            <span class="loader"><span class="loader-inner"></span></span>
+        </div>
+    
+        <script>
+            $(window).on("load", function(){
+                $(".loader-wrapper").fadeOut("slow");
+                $("body").removeClass("preload");
+            });
+        </script>        
         <!-- Navbar Section-->
         <nav class="navbar">
             <div class="navbar__container">
@@ -55,21 +65,21 @@
             <figure class = "inline-block">
                 <img src="images/AlienAttack.png" alt="Image could not be displayed." class = "imageHolder"/>
                 <figcaption><a href="https://james-aliev.itch.io/alien-attack" class = "figcaptionheader">Alien Attack</a></figcaption>
-                <figcaption class = "figcaptiontext">A fun recreation of the fantastic timeless game Alien Invaders, 
-                        utilizing Python as well as the PyGame API to make everything possible.</figcaption>
+                <figcaption class = "figcaptiontext">A recreation of Alien Invaders, 
+                        utilizing Python as well as the PyGame API.</figcaption>
             </figure> 
         
             <figure  class = "inline-block">
                 <img src = "images/NoImageAvailable.png" alt="Image could not be displayed." class = "imageHolder"/>
                 <figcaption><a href="https://github.com/jamesaliev/python-scripts-james-aliev/blob/main/crypto-price-tracker" class = "figcaptionheader">Crypto Price Tracker</a></figcaption>
                 <figcaption class = "figcaptiontext">A piece of Python software that utilizes Selenium as well as well as Matplotlib to gather and visualize Cryptocurrency mentions 
-                    through graphs, these graphs can also be emailed to a users email address.</figcaption>
+                    through graphs, these graphs can also be emailed to a users email address, and hosted on local servers.</figcaption>
             </figure> 
 
             <figure class = "inline-block">
                 <img src="images/NoImageAvailable.png" alt="Image could not be displayed." class = "imageHolder"/>
                 <figcaption><a href="https://github.com/jamesaliev/python-scripts-james-aliev/blob/main/stock-tracker" class = "figcaptionheader">Stock Mention Tracker</a></figcaption>
-                <figcaption class = "figcaptiontext">A piece of Python software that uses the Python API Wraper (PRAW), as well as Plotly and Dash for data visualiztion of the most mentioned 
+                <figcaption class = "figcaptiontext">A piece of Python software that uses the Python API Wrapper (PRAW), as well as Plotly and Dash for data visualiztion of the most mentioned 
                     stock tickers on different subreddits, such as r/wallstreetbets.
                 </figcaption>
             </figure>
@@ -77,8 +87,8 @@
             <figure class = "inline-block">
                 <img src="images/NoImageAvailable.png" alt="Image could not be displayed." class = "imageHolder"/>
                 <figcaption><a href="https://james-aliev.itch.io/generalpygui" class = "figcaptionheader">GeneralPyGUI</a></figcaption>
-                <figcaption class = "figcaptiontext">A readily available Python GUI layout for PyGames created by me, to make it
-                    easier for begineer programmers and developers to start off making GUIs for their Python games.
+                <figcaption class = "figcaptiontext">A readily available Python GUI layout for PyGame created by me, to make it
+                    easier for beginner developers to make GUIs for their Python games.
                 </figcaption>
             </figure> 
         </div><br/>
@@ -88,6 +98,12 @@
                 <img src="images/Solidify.png" alt="Image could not be displayed." class = "imageHolder"/>
                 <figcaption><a href="https://james-aliev.itch.io/alien-attack" class = "figcaptionheader">Solidify</a></figcaption>
                 <figcaption class = "figcaptiontext">A blockchain and smart contract tutorial website that uses a minimalistic design to help individuals learn the fundamentals of smart contracts.</figcaption>
+            </figure>
+
+            <figure class = "inline-block">
+                <img src="images/JamesAliev.png" alt="Image could not be displayed." class = "imageHolder"/>
+                <figcaption><a href="https://github.com/jamesaliev/personal-website" class = "figcaptionheader">Personal Website</a></figcaption>
+                <figcaption class = "figcaptiontext">My personal website made using HTML, CSS, and JavaScript</figcaption>
             </figure>
         </div><br/>
         

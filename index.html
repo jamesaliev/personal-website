@@ -14,9 +14,20 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel = "stylesheet" href = "styles.css">
-
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     </head>
-    <body>        
+    
+    <body class = "preload">  
+        <div class = "loader-wrapper">
+            <span class="loader"><span class="loader-inner"></span></span>
+        </div>
+    
+        <script>
+            $(window).on("load", function(){
+                $(".loader-wrapper").fadeOut("slow");
+                $("body").removeClass("preload");
+            });
+        </script>
         <!-- Navbar Section-->
         <nav class="navbar">
             <div class="navbar__container">
@@ -44,6 +55,8 @@
             </div>
         </nav>
 
+        
+
         <!-- Hero Section -->
         <div class = "spacer layer1"></div>
         <div></div>
@@ -53,6 +66,8 @@
         <script src="app.js"></script>
         <div></div>
         <div class = "spacer layer4"></div>
+
+        
+
     </body>
-    
 </html>
