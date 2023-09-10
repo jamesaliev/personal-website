@@ -444,3 +444,16 @@ img {
         height: 0%;
     }
 }
+
+#element {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F67280;
+    font-size: 50px;
+}
+
+.typed-cursor {
+    font-size: 50px;
+    color: #C06C84;
+}
