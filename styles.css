@@ -14,6 +14,7 @@ html {
 
 body {
     background: #6C567B;
+    margin: 0px;
 }   
 
 h1 {
@@ -96,7 +97,7 @@ h2 {
 
 .navbar__links:hover {
     color: #d394a6;
-    transition: all 0.3s ease;
+    transition: transform 800ms cubic-bezier(.05,.43,.24,1);
     text-shadow: 0 0 10px #d394a6,
                  0 0 20px #d394a6,
                  0 0 40px #d394a6,
@@ -290,11 +291,12 @@ img {
     align-items: center;
     text-decoration: none;
     cursor: url(images/pointer.svg), auto;
+    position: relative;
 }
 
 .figcaptionheader:hover {
     color:#e27781;
-    transition: all 0.3s ease;
+    transition: transform 800ms cubic-bezier(.05,.43,.24,1);
     text-shadow: 0 0 10px #C06C84,
                  0 0 20px #C06C84,
                  0 0 40px #C06C84,
@@ -458,4 +460,107 @@ img {
 .typed-cursor {
     font-size: 50px;
     color: #C06C84;
+}
+
+.card-group {
+    justify-content: right;
+    align-items: center;
+    width: 200px;
+    padding-top: 200px;
+}
+
+.big-card {
+    width: 30vmin;
+    aspect-ratio: 5/7;
+    background-color: #131313;
+    border-radius: 5vmin;
+    position: absolute;
+    transition: transform 800ms cubic-bezier(.05,.43,.24,1);
+}
+
+.small-card {
+    width: 12vmin;
+    aspect-ratio: 5/7;
+    background-color: #C06C84;
+    border-radius: 3vmin;
+    position: absolute;
+    transition: transform 800ms cubic-bezier(.05,.43,.24,1);
+}
+
+.big-card:nth-child(1) {
+    background-color: #FFFF;
+    transform: translateX(-10%) rotate(-3deg);
+    background-image: url(images/filler4.jpg);
+    background-size: 300px;
+}
+
+.big-card:nth-child(3) {
+    background-color: #F67280;
+    transform: translateX(10%) rotate(1deg);
+}
+.big-card:nth-child(5) {
+    background-color: #5953af;
+    transform: translateY(2%) rotate(2deg);
+}
+.big-card:nth-child(7) {
+    background-color: #FFCCB6;
+    transform: rotate(-1deg);
+    background-image: url(images/me.jpg);
+    background-size: 300px;
+}
+
+.small-card:nth-child(2) {
+    background-color:antiquewhite;
+    transform: translateX(-150%) rotate(-4deg);
+    background-image: url(images/filler1.jpg);
+    background-size: 145px;
+}
+
+.small-card:nth-child(4) {
+    background-color: #e74b43;
+    transform: translateX(-50%) rotate(4deg);
+    background-image: url(images/filler2.jpg);
+    background-size: 200px;
+}
+
+.small-card:nth-child(6) {
+    background-color: #C6E2E9;
+    transform: translateX(-50%) rotate(-3deg);
+    background-image: url(images/filler3.jpg);
+    background-size: 145px;
+}
+
+
+
+.card-group:hover {
+    cursor: url(images/pointer.svg), auto;
+}
+.card-group:hover > .big-card:nth-child(1) {
+    transform: translateX(-70%) rotate(-12deg);
+}
+
+.card-group:hover > .big-card:nth-child(3) {
+    transform: translateX(-20%) rotate(-6deg);
+}
+
+.card-group:hover > .big-card:nth-child(5) {
+    transform: translateX(30%) rotate(6deg);
+}
+
+.card-group:hover > .big-card:nth-child(7) {
+    transform: translateX(80%) rotate(12deg);
+}
+
+
+
+.card-group:hover > .small-card:nth-child(2) {
+    transform: translateX(-380%) translateY(-50%) rotate(-20deg);
+}
+
+.card-group:hover > .small-card:nth-child(4) {
+    transform: translateX(-120%) translateY(80%) rotate(-20deg);
+}
+
+.card-group:hover > .small-card:nth-child(6) {
+    transform: translateX(10%) translateY(-95%) rotate(-15deg);
 }
