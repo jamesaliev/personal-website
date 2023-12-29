@@ -3,6 +3,7 @@
 html {
     scroll-behavior: smooth;
 }
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -13,7 +14,7 @@ html {
 }
 
 body {
-    background: #6C567B;
+    background-color: #6C567B;
     margin: 0px;
 }   
 
@@ -108,6 +109,9 @@ h2 {
 
 }
 
+.logoimg {
+    cursor: url(images/pointer.svg), auto;
+}
 div {
     min-height: 20vh;
     display: flex;
@@ -332,44 +336,6 @@ img {
     transform: translateX(-50%);
 }
 
-.spacer {
-    aspect-ratio: 960/90;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: space-between;
-    justify-content: center;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 998;
-}
-
-.layer1 {
-    background-image: url('./images/layer1.svg');
-}
-
-.layer2 {
-    background-image: url('./images/layer2.svg');
-}
-
-.layer3 {
-    background-image: url('./images/layer3.svg');
-}
-
-.layer4 {
-    background-image: url('./images/layer4.svg');
-}
-
-.layer5 {
-    background-image: url('./images/layer5.svg');
-}
-
-.layer6 {
-    background-image: url('./images/layer6.svg');
-}
-
 .loader-wrapper {
     width: 100%;
     height: 100%;
@@ -534,8 +500,6 @@ img {
     background-size: 145px;
 }
 
-
-
 .card-group:hover {
     cursor: url(images/pointer.svg), auto;
     
@@ -560,8 +524,6 @@ img {
     filter: grayscale(1%);
 }
 
-
-
 .card-group:hover > .small-card:nth-child(2) {
     transform: translateX(-380%) translateY(-50%) rotate(-20deg);
     filter: grayscale(1%);
@@ -575,4 +537,46 @@ img {
 .card-group:hover > .small-card:nth-child(6) {
     transform: translateX(10%) translateY(-95%) rotate(-15deg);
     filter: grayscale(1%);
+}
+
+.spacer {
+    aspect-ratio: 960/90;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: space-between;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 998;
+}
+
+.layer1 {
+    background-image: url('./images/layer1.svg');
+}
+
+.layer2 {
+    background-image: url('./images/layer2.svg');
+}
+
+.layer3 {
+    background-image: url('./images/layer3.svg');
+}
+
+.layer4 {
+    background-image: url('./images/layer4.svg');
+}
+
+.layer5 {
+    background-image: url('./images/layer5.svg');
+}
+
+.layer6 {
+    background-image: url('./images/layer6.svg');
+}
+
+.blob-motion {
+    position: absolute;
 }
