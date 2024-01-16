@@ -253,15 +253,12 @@ img {
     font-size: 30px;
     text-align: center;
 }
-
 .lower-statement {
-    list-style: none;
+    width: 100%;
+    text-align: center;
     color: #C06C84;
-    font-size: 20px;
-    text-align: center;
-    justify-content: center; 
-    padding: 8em 20em; 
-    text-align: center;
+    font-size: 15px;
+    padding: 0em 0em;
 }
 
 #footer {
