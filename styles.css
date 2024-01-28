@@ -22,7 +22,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #F67280;
+    color: #E8BCB9;
     font-size: 50px;
 }
 
@@ -36,7 +36,7 @@ h2 {
 }
 
 .navbar {
-    background: #131313;
+    background: #1D1A39;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -59,7 +59,7 @@ h2 {
 }
 
 #navbar__logo {
-    background-image: linear-gradient(to top, #C06C84 0%, #F67280 100%);
+    background-image: linear-gradient(to top, #C06C84 0%, #E8BCB9 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -85,7 +85,7 @@ h2 {
 }
 
 .navbar__links {
-    color: #F67280;
+    color: #E8BCB9;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -112,6 +112,18 @@ h2 {
 .logoimg {
     cursor: url(images/pointer.svg), auto;
 }
+
+.logoimg:hover {
+    color: #d394a6;
+    transition: transform 800ms cubic-bezier(.05,.43,.24,1);
+    text-shadow: 0 0 10px #d394a6,
+                 0 0 20px #d394a6,
+                 0 0 40px #d394a6,
+                 0 0 80px #d394a6,
+                 0 0 120px #d394a6,
+                 0 0 160px #d394a6;
+}
+
 div {
     min-height: 20vh;
     display: flex;
@@ -171,7 +183,7 @@ div {
 
 .dynamic-txts li {
     list-style: none;
-    color: #F67280;
+    color: #E8BCB9;
     font-size: 60px;
     font-weight: 500;
     top: 0;
@@ -281,14 +293,14 @@ img {
 
 .figcaptionheader {
     font-size: 20px;
-    color: #F67280;
+    color: #E8BCB9;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 250px;
     height: 10px;
     text-align: center;
-    background-color: #131313;
+    background-color: #1D1A39;
     padding: 0.75em;
     box-decoration-break: clone;
     justify-content: space-around;
@@ -316,7 +328,7 @@ img {
     width: 250px;
     height: auto;
     text-align: center;
-    background-color: #131313;
+    background-color: #1D1A39;
     padding: 1em 1em;
     box-decoration-break: clone;
     border-bottom-left-radius: 20px;
@@ -363,7 +375,7 @@ img {
     vertical-align: top;
     display: inline-block;
     width: 100%;
-    background-color: #131313;
+    background-color: #1D1A39;
     animation: loader-inner 4s infinite ease-in;
 }
 
@@ -419,13 +431,13 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #F67280;
+    color: #E8BCB9;
     font-size: 50px;
 }
 
 .typed-cursor {
     font-size: 50px;
-    color: #C06C84;
+    color: #E8BCB9;
 }
 
 .card-group {
@@ -438,11 +450,11 @@ img {
 .big-card-face {
     width: 50vmin;
     aspect-ratio: 5/7;
-    background-color: #131313;
+    background-color: #1D1A39;
     border-radius: 5vmin;
     position: absolute;
     transition: transform 800ms cubic-bezier(.05,.43,.24,1);
-    border: 3px solid #131313;
+    border: 3px solid #1D1A39;
     background-color: #FFCCB6;
     transform: rotate(-1deg);
     background-image: url(images/me.jpg);
@@ -452,11 +464,11 @@ img {
 .big-card {
     width: 30vmin;
     aspect-ratio: 5/7;
-    background-color: #131313;
+    background-color: #1D1A39;
     border-radius: 5vmin;
     position: absolute;
     transition: transform 800ms cubic-bezier(.05,.43,.24,1);
-    border: 3px solid #131313;
+    border: 3px solid #1D1A39;
     filter: grayscale(60%);
 }
 
@@ -467,7 +479,7 @@ img {
     border-radius: 3vmin;
     position: absolute;
     transition: transform 800ms cubic-bezier(.05,.43,.24,1);
-    border: 3px solid #131313;
+    border: 3px solid #1D1A39;
     filter: grayscale(60%);
 }
 
@@ -479,7 +491,7 @@ img {
 }
 
 .big-card:nth-child(3) {
-    background-color: #F67280;
+    background-color: #E8BCB9;
     transform: translateX(10%) rotate(1deg);
 }
 .big-card:nth-child(5) {
@@ -643,11 +655,11 @@ img {
     .big-card {
         width: 30vmin;
         aspect-ratio: 5/7;
-        background-color: #131313;
+        background-color: #1D1A39;
         border-radius: 5vmin;
         position: absolute;
         transition: transform 800ms cubic-bezier(.05,.43,.24,1);
-        border: 3px solid #131313;
+        border: 3px solid #1D1A39;
         filter: grayscale(60%);
     }
 
@@ -658,7 +670,7 @@ img {
         border-radius: 3vmin;
         position: absolute;
         transition: transform 800ms cubic-bezier(.05,.43,.24,1);
-        border: 3px solid #131313;
+        border: 3px solid #1D1A39;
         filter: grayscale(60%);
     }
     .lower-statement {
@@ -691,11 +703,11 @@ img {
     .big-card {
         width: 200px;
         aspect-ratio: 5/7;
-        background-color: #131313;
+        background-color: #1D1A39;
         border-radius: 5vmin;
         position: absolute;
         transition: transform 800ms cubic-bezier(.05,.43,.24,1);
-        border: 3px solid #131313;
+        border: 3px solid #1D1A39;
         filter: grayscale(60%);
     }
 
@@ -706,7 +718,7 @@ img {
         border-radius: 3vmin;
         position: absolute;
         transition: transform 800ms cubic-bezier(.05,.43,.24,1);
-        border: 3px solid #131313;
+        border: 3px solid #1D1A39;
         filter: grayscale(60%);
     }
     .lower-statement {
