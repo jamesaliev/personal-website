@@ -15,6 +15,10 @@ html {
 
 body {
     background-color: #6C567B;
+    background-image: url(images/background.svg), url(images/background1.svg);
+    background-size: 1920px, 1920px;
+    background-position-y: top, 67.5rem;
+    background-repeat: no-repeat, no-repeat;
     margin: 0px;
 }   
 
@@ -493,22 +497,26 @@ img {
 .big-card:nth-child(3) {
     background-color: #E8BCB9;
     transform: translateX(10%) rotate(1deg);
+    
 }
 .big-card:nth-child(5) {
     background-color: #5953af;
     transform: translateY(2%) rotate(2deg);
+    background-image: url(images/filler1.jpg);
+    background-size: 300px;
+    
 }
 .big-card:nth-child(7) {
     background-color: #FFCCB6;
     transform: rotate(-1deg);
-    background-image: url(images/me.jpg);
+    background-image: url(images/portrait.jpg);
     background-size: 300px;
 }
 
 .small-card:nth-child(2) {
     background-color:antiquewhite;
     transform: translateX(-150%) rotate(-4deg);
-    background-image: url(images/filler1.jpg);
+    background-image: url(images/me.jpg);
     background-size: 145px;
 }
 
