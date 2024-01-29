@@ -3,23 +3,28 @@
 html {
     scroll-behavior: smooth;
 }
-
+*::-webkit-scrollbar {
+    display: none;
+}
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Concert One', sans-serif;
     cursor: url(images/cursor.svg), auto;
-
+    scrollbar-color: rgb(29,26,57) white;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 
 body {
     background-color: #6C567B;
-    background-image: url(images/background.svg), url(images/background1.svg);
-    background-size: 1920px, 1920px;
-    background-position-y: top, 67.5rem;
-    background-repeat: no-repeat, no-repeat;
+    background-image: url(images/background.svg), url(images/background1.svg), url(images/background.svg);
+    background-size: 1920px, 1920px, 1920px;
+    background-position-y: top, 67.5rem, 135rem;
+    background-repeat: no-repeat, no-repeat, no-repeat;
     margin: 0px;
+    overflow-x: hidden;
 }   
 
 h1 {
@@ -59,7 +64,7 @@ h2 {
     width: 100%;
     max-width: 1300px;
     margin: 0 auto;
-    padding: 0 50px;
+    padding: auto;
 }
 
 #navbar__logo {
@@ -287,12 +292,12 @@ img {
 
 .imageHolder {
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
     width: 250px;
     height: auto;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    overflow: hidden;
+    border: 7px #1D1A39 solid;
 }
 
 .figcaptionheader {
