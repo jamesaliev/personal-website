@@ -20,6 +20,8 @@ body {
     background-position-y: top, 67.5rem;
     background-repeat: no-repeat, no-repeat;
     margin: 0px;
+    max-width: 100%;
+    overflow-x: hidden;
 }   
 
 h1 {
@@ -293,6 +295,7 @@ img {
     height: auto;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    border: 5px solid #1D1A39;    
 }
 
 .figcaptionheader {
