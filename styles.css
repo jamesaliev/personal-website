@@ -485,6 +485,8 @@ img {
     transform: rotate(-1deg);
     background-image: url(images/me.jpg);
     background-size: 200px;
+    visibility: collapse;
+
 }
 
 .big-card {
@@ -648,10 +650,9 @@ img {
     text-align: center;
 }
 
+
+
 @media only screen and (max-width: 1920px) {
-    .big-card-face {
-        visibility: collapse;
-    }
     .greeting {
         text-align: center;
         align-items: center;
@@ -679,9 +680,6 @@ img {
         padding: 0em 100px;
         padding-left: 200px;
         text-align: center;
-    }
-    .big-card-face {
-        visibility: collapse;
     }
     
     .big-card {
@@ -731,9 +729,6 @@ img {
         padding: 0em 2.5em;
         text-align: center;
         padding-left: 150px;
-    }
-    .big-card-face {
-        visibility: collapse;
     }
 
     .big-card {
