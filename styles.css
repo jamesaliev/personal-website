@@ -871,3 +871,39 @@ img {
         padding: 0em 0.1em;
     }
 }
+
+#cursor {
+    min-height: 0vh;
+    height: 3vw;
+    width: 3vw;
+    position: absolute;
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+.cursor-inner {
+    min-height: 0vh;
+    transition: width 200ms cubic-bezier(.05, .43, .24, 1),
+                height 200ms cubic-bezier(.05, .43, .24, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+    #cursor {
+        z-index: 100000000000000;
+        position: absolute;
+        pointer-events: none;
+        will-change: transform;
+        width: 3vw;
+        height: 3vw;
+    }
+
+    #cursor .cursor-inner {
+        width: 2vw;
+        height: 2vw;
+        border-radius: 50%;
+        border: solid 3px #F39F5A;
+        display: block;
+        position: absolute;
+    }
+}
