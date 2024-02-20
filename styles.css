@@ -101,7 +101,6 @@ h2 {
     padding: 0 1rem;
     height: 100%;
     cursor: url(images/pointer.svg), auto;
-
 }
 
 .navbar__links:hover {
@@ -225,16 +224,6 @@ div {
 img {
     width: 30px;
     height: auto;
-}
-
-.moreaboutme {
-    padding-left: 50px;
-    padding-right: 50px;
-    list-style: none;
-    color: #d394a6;
-    font-size: 30px;
-    display: flex;
-    text-align: center;
 }
 
 .programmingLanguages {
@@ -378,7 +367,7 @@ img {
     width: 100%;
     height: 100%;
     position: fixed;
-    z-index: 1000;
+    z-index: 1001;
     top: 0;
     left: 0;
     background-color: #6C567B;
@@ -639,18 +628,35 @@ img {
     position: absolute;
 }
 
+.greeting_container {
+    min-height: 0vh;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+
+.greeting_text_container {
+    min-height: 0vh;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    width: 1360px;
+    height: auto;
+}
+
 .greeting {
-    justify-content: left; 
-    padding: 0em 9.15em;
+    justify-content: left;
 }
 
 .greeting-text {
-    justify-content: left; 
+    justify-content: center; 
     padding: 0em 6.5em;
     text-align: center;
 }
 
-
+.greeting_name {
+    color: #F39F5A;
+}
 
 @media only screen and (max-width: 1920px) {
     .greeting {
@@ -658,12 +664,14 @@ img {
         align-items: center;
         justify-content: center;
         font-size: 50px;
-        padding: 0em 9.5em;
+        padding-left: 7.8em;
+        padding-right: 0em;
+        padding-top: 8rem;
     }
     .greeting-text {
         justify-content: left; 
         padding: 0em 11.5em;
-        text-align: center;
+        text-align: left;
         padding-left: 390px;
     }
 }
@@ -890,7 +898,7 @@ img {
 
 @media (hover: hover) and (pointer: fine) {
     #cursor {
-        z-index: 100000000000000;
+        z-index: 1000;
         position: absolute;
         pointer-events: none;
         will-change: transform;
@@ -906,4 +914,222 @@ img {
         display: block;
         position: absolute;
     }
+}
+
+.scroll_one {
+    min-height: 0vh;
+    height:50px;
+    width:900px;
+    background-image: url('./images/layered-steps-haikei.svg');
+    background-repeat: no-repeat;
+    transform: translateX(0%);
+    transition: all 1s ease-out;
+}
+
+.scroll_two {
+    min-height: 0vh;
+    height:50px;
+    width:900px;
+    background-image: url('./images/layered-steps-haikei1.svg');
+    background-repeat: no-repeat;
+    transform: translateX(0%);
+    transition: all 1s ease-out;
+    padding-top: 0px;
+}
+
+.scroll_one_active {
+    opacity: 4;
+    transform: translateX(10%);
+}
+
+.scroll_two_active {
+    opacity: 4;
+    transform: translateX(-20%);
+}
+
+.terminal_container {
+    max-width: 800px;
+    width: 800px;
+    height: 600px;
+    background-color: #1D1A39;
+    border-radius: 15px;
+    align-items: flex-start;
+    flex-direction: column;
+    transform: translateX(-20%);
+    transition: all 1s ease-out;
+    opacity: 0;
+}
+
+.terminal_container_active {
+    opacity: 4;
+    transform: translateX(0%);
+}
+
+.top_menu {
+    min-height: 0vh;
+    width: 100%;
+    height: 25px;
+    background-color:#4b4568;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding-left: 5px;
+    justify-content: left;
+    
+}
+
+.button_holder {
+    justify-content: space-around;
+    min-height: 0vh;
+    height: 100%;
+    width: 60px;
+}
+
+.red_button {
+    min-height: 0vh;
+    height: 15px;
+    width: 15px;
+    background-color: #e27781;
+    border-radius: 7.5px;
+    border-color: #e27781;
+}
+
+.yellow_button {
+    min-height: 0vh;
+    height: 15px;
+    width: 15px;
+    background-color: #F39F5A;
+    border-radius: 7.5px;
+    border-color: #F39F5A;
+}
+
+.green_button {
+    min-height: 0vh;
+    height: 15px;
+    width: 15px;
+    background-color: #77dd77;
+    border-radius: 7.5px;
+    border-color: #77dd77;
+}
+
+.red_button:hover {
+    cursor: url(images/pointer.svg), auto;
+}
+
+.yellow_button:hover {
+    cursor: url(images/pointer.svg), auto;
+}
+
+.green_button:hover {
+    cursor: url(images/pointer.svg), auto;
+}
+
+
+.console {
+    min-height: 0vh;
+    height: 575px;
+    width: 100%;
+    flex-direction: column;
+    justify-content:flex-start;
+}
+
+.text_in_terminal {
+    width: 95%;
+    color:#77dd77;
+    padding: 2px;
+}
+
+.command {
+    width: 95%;
+    color: #C6E2E9;
+    padding: 2px;
+}
+
+.whatIdo_container {
+    min-height: 0vh;
+    justify-content: right;
+    height: 180px;
+}
+
+.whatIdo1_container {
+    min-height: 0vh;
+    justify-content: left;
+    height: 400px;
+}
+
+.whatIdo2_container {
+    min-height: 0vh;
+    justify-content: right;
+    height: 330px;
+}
+
+.whatIdo {
+    min-height: 0vh;
+    max-width: 600px;
+    height: 150px;
+    border-radius: 25px;
+    background-color: #1D1A39;
+    transform: translateX(0%);
+    transition: all 1s ease-out;
+    opacity: 0;
+}
+
+.whatIdo_active {
+    opacity: 4;
+    transform: translateX(-44%);
+}
+
+.whatIdo1 {
+    min-height: 0vh;
+    max-width: 640px;
+    height: 370px;
+    border-radius: 25px;
+    background-color: #1D1A39;
+    transform: translateX(0%);
+    transition: all 1s ease-out;
+    opacity: 0;
+}
+
+.whatIdo_active1 {
+    opacity: 4;
+    transform: translateX(100%);
+}
+
+.whatIdo2 {
+    min-height: 0vh;
+    max-width: 600px;
+    height: 300px;
+    border-radius: 25px;
+    background-color: #1D1A39;
+    transform: translateX(0%);
+    transition: all 1s ease-out;
+    opacity: 0;
+}
+
+.whatIdo_active2 {
+    opacity: 4;
+    transform: translateX(-44%);
+}
+
+.moreaboutme {
+    padding-left: 50px;
+    padding-right: 50px;
+    color: #d394a6;
+    font-size: 30px;
+    text-align: right;
+}
+
+.moreaboutme1 {
+    padding-left: 50px;
+    padding-right: 50px;
+    color: #d394a6;
+    font-size: 30px;
+    text-align: left;
+}
+
+.moreaboutme2 {
+    padding-left: 50px;
+    padding-right: 50px;
+    color: #d394a6;
+    font-size: 30px;
+    text-align: right;
 }
