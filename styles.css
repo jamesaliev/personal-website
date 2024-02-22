@@ -24,6 +24,7 @@ body {
     background-position-y: top, 67.5rem, 135rem;
     background-repeat: no-repeat, no-repeat, no-repeat;
     margin: 0px;
+    
 }   
 
 h1 {
@@ -448,6 +449,7 @@ img {
     justify-content: center;
     color: #E8BCB9;
     font-size: 50px;
+    text-shadow: 5px 5px #4b4568;
 }
 
 .typed-cursor {
@@ -656,6 +658,13 @@ img {
 
 .greeting_name {
     color: #F39F5A;
+    text-shadow: 5px 5px #4b4568;
+}
+
+.pLHeader {
+    text-shadow: 5px 5px #4b4568;
+    transform: skew(-10deg);
+    letter-spacing: 2px;
 }
 
 @media only screen and (max-width: 1920px) {
@@ -958,6 +967,7 @@ img {
     transform: translateX(-20%);
     transition: all 1s ease-out;
     opacity: 0;
+    box-shadow: -15px 15px#F39F5A;
 }
 
 .terminal_container_active {
@@ -1030,6 +1040,7 @@ img {
     width: 100%;
     flex-direction: column;
     justify-content:flex-start;
+    
 }
 
 .text_in_terminal {
@@ -1071,6 +1082,7 @@ img {
     transform: translateX(0%);
     transition: all 1s ease-out;
     opacity: 0;
+    box-shadow: 15px 15px#F39F5A;
 }
 
 .whatIdo_active {
@@ -1087,6 +1099,7 @@ img {
     transform: translateX(0%);
     transition: all 1s ease-out;
     opacity: 0;
+    box-shadow: -15px 15px#F39F5A;
 }
 
 .whatIdo_active1 {
@@ -1103,6 +1116,7 @@ img {
     transform: translateX(0%);
     transition: all 1s ease-out;
     opacity: 0;
+    box-shadow: 15px 15px#F39F5A;
 }
 
 .whatIdo_active2 {
@@ -1132,4 +1146,8 @@ img {
     color: #d394a6;
     font-size: 30px;
     text-align: right;
+}
+
+.coloured_icon{
+    color: #F39F5A;
 }
