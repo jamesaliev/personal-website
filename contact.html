@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset= "UTF-8">
+        <meta name = "viewport"
+        content = "width=device-width,
+        initial-scale=1.0">
+        <title>James Aliev | Contact</title>
+        <link rel="stylesheet" href="styles.css"/>
+        <link rel="shortcut icon" type = "image/x-icon" href="images/JamesAlievLogo.png">
+        <script src="https://kit.fontawesome.com/a25dbb3a9c.js" crossorigin="anonymous"></script>
+        <!-- Boilerplate -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href = "styles.css">
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        
+    </head>
+    <div id="cursor">
+        <div class="cursor-inner"></div>
+    </div>
+    
+    <script src="cursor.js"></script>
+    <body class = "preload">
+        <div class = "loader-wrapper">
+            <span class="loader"><span class="loader-inner"></span></span>
+        </div>
+    
+        <script>
+            $(window).on("load", function(){
+                $(".loader-wrapper").fadeOut("slow");
+                $("body").removeClass("preload");
+            });
+        </script>        
+        <!-- Navbar Section-->
+        <nav class="navbar">
+            <div class="navbar__container">
+                
+                <a class = "logoimg-wrapper" href = "/"><img class = "logoimg" src = "images/JamesAlievLogo.png"></a>
+                
+                <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="/" class="navbar__links"><i class="fas fa-home"></i></a>
+                    </li>
+
+                    <li class="navbar__item">
+                        <a href="about.html" class="navbar__links">About Me</a>
+                    </li>
+
+                    <li class="navbar__item">
+                        <a href="projects.html" class="navbar__links">My Projects</a>
+                    </li>
+
+                    <li class="navbar__item">
+                        <a href="contact.html" class="navbar__links">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+        <div class = "spacer layer2"></div>
+        <div class = "header_for_form">
+            <h1 class = "pLHeader">Contact Me</h1>
+        </div>
+        
+        <div class="container">
+            <form class = "contact-form" action="https://formspree.io/f/xwkgbldl" method="post">
+              <div class = "form_names">
+                <input type="text" id="fname" name="firstname" placeholder="First Name">
+          
+                <input type="text" id="lname" name="lastname" placeholder="Last Name">
+                
+                <input type="text" id="embox" name="emailbox" placeholder="E-mail Address">
+  
+              </div>
+
+              <div class = "form_names_message_submit">
+                <textarea id="subject" name="subject" placeholder="Message" style="height:135px;"></textarea>
+                <input class = "submit_button" type="submit" value="Submit">
+              </div>
+          
+            </form>
+          </div> 
+        </div>
+        <div></div>
+        <div class = "footer-container">
+            <h3 id = "footer" class = "lower-statement" style = "padding-top: 10em;">© 2023 James Aliev</h3>
+        </div>
+        
+        <script src="app.js"></script>
+        
+    </body>
+    <div class = "spacer layer5"></div>
+        
+</html>

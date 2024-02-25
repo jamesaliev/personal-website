@@ -263,6 +263,10 @@ img {
     padding: 0em 0em;
 }
 
+.footer-container {
+    width: 100%;
+}
+
 #footer {
    position: absolute;
    width: 100%;
@@ -786,6 +790,9 @@ img {
 
 }
 @media only screen and (max-width: 900px) { /*iPad viewport*/
+    .logoimg-wrapper {
+        padding-left: 30px;
+    }
     .card-group {
         visibility: collapse;
     }
@@ -824,6 +831,20 @@ img {
     }
 }
 @media only screen and (max-width: 428px) { /*mobile viewport*/
+    .logoimg-wrapper {
+        padding-left: 10px;
+    }
+    
+    .contact-form {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-form #subject {
+        width: 80%;
+    }
+
     .greeting {
         width: 100%;
         text-align: center;
@@ -1155,3 +1176,104 @@ img {
 .coloured_icon{
     color: #F39F5A;
 }
+
+ /* Style inputs with type="text", select elements and textareas */
+ input[type=text], select, textarea {
+    background-color: #C6E2E9;
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 2px solid #1D1A39;
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    appearance: none;
+    outline: none;  
+    color:#4b4568;
+    transition: color 0.3s ease;
+    caret-color: #4b4568;
+    border-radius: 15px;
+    
+  }
+
+  input[type=text]:focus::placeholder {
+    color: transparent;
+  }
+
+  textarea:focus::placeholder {
+    color: transparent;
+    
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #312f3d;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: -4px 4px #F39F5A;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #4b4568;
+    transition: 200ms ease-out;
+    box-shadow: -7px 7px #F39F5A;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    display: flex;
+    width: 100%;
+    min-height: 0vh;
+    float: left;
+    clear: none;
+    justify-content: center;
+    align-items: center;
+  } 
+  
+  .form_names {
+    min-height: 0vh;
+    width: 250px;
+    display: block;
+    float: left;
+    padding: 15px;
+  }
+
+  .form_names_message_submit {
+    min-height: 0vh;
+    width: 500px;
+    display: block;
+    float: left;
+    padding: 15px;
+  }
+
+  .submit_button {
+    width: 150px;
+    font-size: 20px;
+  }
+
+  .contact-form #fname {
+    font-size: 20px;
+    
+  }
+
+  .contact-form #lname {
+    font-size: 20px;
+  }
+
+  .contact-form #embox {
+    font-size: 20px;
+  }
+
+  .contact-form #subject {
+    font-size: 20px;
+  }
+
+  .header_for_form {
+    min-height: 0vh;
+    height: 75px;
+  }
