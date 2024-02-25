@@ -984,7 +984,7 @@ img {
 .terminal_container {
     max-width: 800px;
     width: 800px;
-    height: 600px;
+    height: 610px;
     background-color: #1D1A39;
     border-radius: 15px;
     align-items: flex-start;
@@ -1061,7 +1061,7 @@ img {
 
 .console {
     min-height: 0vh;
-    height: 575px;
+    height: 585px;
     width: 100%;
     flex-direction: column;
     justify-content:flex-start;
