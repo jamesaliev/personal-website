@@ -2,6 +2,7 @@
 
 html {
     scroll-behavior: smooth;
+    cursor: url(images/cursor.svg), auto;
 }
 *::-webkit-scrollbar {
     display: none;
@@ -10,7 +11,7 @@ html {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Concert One', sans-serif;
+    font-family: 'Concert One', monospace;
     cursor: url(images/cursor.svg), auto;
     scrollbar-color: rgb(29,26,57) white;
     -ms-overflow-style: none;  /* IE and Edge */
@@ -671,6 +672,7 @@ img {
     text-shadow: 5px 5px #4b4568;
     transform: skew(-10deg);
     letter-spacing: 2px;
+    width: 1000px;
 }
 
 @media only screen and (max-width: 1920px) {
@@ -1276,4 +1278,8 @@ img {
   .header_for_form {
     min-height: 0vh;
     height: 75px;
+  }
+
+  .submit_button:hover {
+    cursor: url(images/pointer.svg), auto;
   }
