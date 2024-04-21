@@ -673,6 +673,12 @@ img {
     transform: skew(-10deg);
     letter-spacing: 2px;
     width: 1000px;
+    justify-content: center;
+}
+
+.pLHeaderContainer {
+    min-height: 0vh;
+    height: 100px;
 }
 
 @media only screen and (max-width: 1920px) {
