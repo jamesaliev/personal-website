@@ -20,7 +20,7 @@ html {
 
 body {
     background-color: #6C567B;
-    background-image: url(images/background.svg), url(images/background1.svg), url(images/background.svg);
+    /* background-image: url(images/background.svg), url(images/background1.svg), url(images/background.svg); */
     background-size: 1920px, 1920px, 1920px;
     background-position-y: top, 67.5rem, 135rem;
     background-repeat: no-repeat, no-repeat, no-repeat;
@@ -697,6 +697,16 @@ img {
         text-align: left;
         padding-left: 390px;
     }
+    body {
+        background-color: #6C567B;
+        background-image: url(images/background.svg), url(images/background1.svg), url(images/background.svg);
+        background-size: 1920px, 1920px, 1920px;
+        background-position-y: top, 67.5rem, 135rem;
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        margin: 0px;
+        color:#6C567B
+        
+    }   
 }
 @media only screen and (max-width: 1440px) {
     .greeting {
@@ -741,6 +751,16 @@ img {
         font-size: 15px;
         padding: 0em 0em;
     }
+    body {
+        background-color: #6C567B;
+        background-image: url(images/background.svg), url(images/background1.svg), url(images/background.svg);
+        background-size: 1920px, 1920px, 1920px;
+        background-position-y: top, 67.5rem, 135rem;
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        margin: 0px;
+        color:#6C567B
+        
+    }   
 
 }
 
@@ -761,6 +781,7 @@ img {
         text-align: center;
         padding-left: 150px;
     }
+    
 
     .big-card {
         width: 200px;
@@ -795,6 +816,16 @@ img {
         display: inline-block;
         padding: 1em 1em;
     }
+    body {
+        background-color: #6C567B;
+        background-image: url(images/background.svg), url(images/background1.svg), url(images/background.svg);
+        background-size: 1920px, 1920px, 1920px;
+        background-position-y: top, 67.5rem, 135rem;
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        margin: 0px;
+        color:#6C567B
+        
+    }   
 
 }
 @media only screen and (max-width: 900px) { /*iPad viewport*/
@@ -837,6 +868,16 @@ img {
         width: 100%;
         text-align: center;
     }
+    body {
+        background-color: #6C567B;
+        background-image: url(images/background.svg), url(images/background1.svg), url(images/background.svg);
+        background-size: 1920px, 1920px, 1920px;
+        background-position-y: top, 67.5rem, 135rem;
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        margin: 0px;
+        color:#6C567B
+        
+    }   
 }
 @media only screen and (max-width: 428px) { /*mobile viewport*/
     .logoimg-wrapper {
@@ -1157,6 +1198,70 @@ img {
     transform: translateX(-44%);
 }
 
+.experienceContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.workExperienceContainer {
+    min-height: 0vh;
+    justify-content: center;
+}
+
+.workExperience {
+    min-height: 0vh;
+    max-width: 1500px;
+    border-radius: 25px;
+    background-color: #1D1A39;
+    box-shadow: -8px 8px#F39F5A;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.workExperienceName-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 0vh;
+    width: 90%;
+}
+
+.workExperienceName {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    min-height: 0vh;
+    width: 100%;
+}
+
+.workExperienceNameText {
+    margin: 0;
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    color: #FFCCB6;
+}
+
+.workExperienceDescription {
+    min-height: 0vh;
+    padding: 25px;
+    text-align: left;
+    background: #0F0D23;
+    border-radius: 45px;
+    width: 95%;
+    flex-grow: 1;
+    background-clip: content-box;
+}
+
+.workExperienceDescriptionText {
+    font-size: 20px;
+    color:#C6E2E9;
+    padding: 20px;
+}
+
 .moreaboutme {
     padding-left: 50px;
     padding-right: 50px;
@@ -1289,3 +1394,17 @@ img {
   .submit_button:hover {
     cursor: url(images/pointer.svg), auto;
   }
+
+.expertGeophysicsLogo {
+    margin-top: 20px;
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.bmoLogo {
+    margin-top: 20px;
+    width: auto;
+    height: 50px;
+    border-radius: 10px;
+}
