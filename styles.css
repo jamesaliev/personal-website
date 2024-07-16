@@ -1817,6 +1817,7 @@ input, textarea {
 
 .containerIconsContainerContainer {
     display: flex;
+    
     justify-content: center; /* Center items horizontally */
     align-items: center; /* Center items vertically */
     gap: 1rem; /* Adjust the gap between items as needed */
@@ -1845,4 +1846,24 @@ input, textarea {
     background-color:#0F0D23;
     border-radius: inherit;
 }
-  
+
+.svgChromaticContainer {
+    height: 30px;
+    min-height: 0vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: #1D1A39;
+    margin-left: 17.5%;
+    margin-right: 17.5%;
+    margin-bottom: 10px;
+    border-radius: 25px;
+}
+
+.book {
+    color: #B4D8E7;
+}
+
+.star {
+    color:#F0E68C;
+}

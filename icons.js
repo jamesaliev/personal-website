@@ -5,7 +5,7 @@
     const circleElements = Array.from(circles);
   
     // Define an array of colors
-    const colors = ['#ffcc00', '#ff6699', '#66ccff', '#99ff99', '#ff99cc', '#cc99ff', '#66ffcc', '#ffff99', '#a5ff99'];
+    const colors = ['#ffdd00', '#ff618b', '#ff618b', '#ffdd00', '#ec55bf', '#ec55bf', '#ff618b', '#ff618b', '#8f00ff'];
   
     const expandCircle = (target, index) => {
       const targetRect = target.getBoundingClientRect();
@@ -51,16 +51,9 @@
       switchButton.classList.toggle('checked');
       document.documentElement.classList.toggle('vision-ui');
     };
+    
     switchButton.addEventListener('click', toggleTheme);
-  
-    // Default selection and animation
-    setTimeout(() => {
-      expandCircle(circleElements[4], 4); // Index 4 corresponds to icon5
-      setTimeout(() => {
-        toggleTheme();
-        setTimeout(() => {
-          expandCircle(circleElements[4], 4);
-        }, 600);
-      }, 900);
-    }, 300);
+    
+    toggleTheme();
+    expandCircle(circleElements[4], 4); // Index 4 corresponds to icon5
 })();
