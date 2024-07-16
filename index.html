@@ -70,10 +70,33 @@
             <h1 class = "greeting">Welcome I'm&nbsp<span data-value = "James Aliev"class = "greeting_name wordLoading">James Aliev</span></h1>
         </div>
         <div class = "greeting_text_container">
+            <h2 class = "greeting-text" id="element"></h2>
+            <!-- Load library from the CDN -->
+            <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+            <!-- Setup and start animation! -->
+            <script>
+                var typed = new Typed('#element', {
+                strings: [
+                    "I'm a Student at UofT", 
+                    "I'm a 3D Modeler",
+                    "I'm a 3D Printing Fanatic",
+                    "I'm a Computer Engineer",
+                    "I'm a Programmer",
+                    "I'm a PCB Designer"
+                ],
+                typeSpeed: 50,
+                backSpeed: 50,
+                loop: true,
+                showCursor: false,
+                });
+            </script>
+        
+        </div>
+        <!-- <div class = "greeting_text_container">
             <h2 class = "greeting-text">If you want to know more 
                 about me then keep on scrolling.</h2>
             <br>
-        </div>
+        </div> -->
         
         
         

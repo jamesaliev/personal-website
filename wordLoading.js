@@ -11,5 +11,5 @@ document.querySelector(".wordLoading").onmouseover = event => {
      }).join("");
     if (iterations >= event.target.dataset.value.length) clearInterval(interval);
     iterations += 1;
-  }, 30)
+  }, 20)
 }
