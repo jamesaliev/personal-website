@@ -1875,6 +1875,7 @@ input, textarea {
 
 .containerTechnologiesContainerContainer {
     display: flex;
+    flex-direction: column;
     justify-content: center; /* Center items horizontally */
     align-items: center; /* Center items vertically */
     gap: 1rem; /* Adjust the gap between items as needed */
@@ -1891,6 +1892,7 @@ input, textarea {
 
 .containerTechnologiesContainer {
     display: flex;
+    
     justify-content: center; /* Center items horizontally */
     align-items: center; /* Center items vertically */
     flex-wrap: wrap; /* Allow items to wrap to the next row */
@@ -1912,4 +1914,29 @@ input, textarea {
     margin-right: 11.25px;
     margin-bottom: 5px;
     margin-top: 5px;
+    cursor: url(images/pointer.svg), auto;
+}
+
+.containerTechnologiesContainer img:hover {
+    transition: all 0.3s ease;
+    transform: scale(1.5);
+    cursor: url(images/pointer.svg), auto;
+}
+
+#technologyInfo {
+    display: none;
+    background-color: #0F0D23;
+    border-radius: 15px;
+    padding: 5px;
+    min-height: 0vh;
+    height: auto;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #B4D8E7;
+}
+
+.fa-home {
+    cursor: url(images/pointer.svg), auto;
 }

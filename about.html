@@ -68,7 +68,7 @@
         <div class = "spacer layer2"></div>
         
         <div class = "pLHeaderContainer">
-            <h1 class = "pLHeader">Work Experience</h1>
+            <h1 data-value = "Work Experience" class = "pLHeader wordLoading">Work Experience</h1>
         </div>
         <div class="experienceContainer">
             <div class = "workExperienceContainer">
@@ -120,7 +120,7 @@
         </div>
         
         <div class = "pLHeaderContainer">
-            <h1 class = "pLHeader">Programming Languages</h1><br/>
+            <h1 data-value = "Programming Languages" class = "pLHeader wordLoading">Programming Languages</h1><br/>
         </div>
         <div class="svgChromaticContainer">
             <i class="fa-solid fa-book book"></i>
@@ -203,27 +203,29 @@
         </div>
 
         <div class = "pLHeaderContainer">
-            <h1 class = "pLHeader">Technologies</h1><br/>
+            <h1 data-value = "Technologies" class = "pLHeader wordLoading">Technologies</h1><br/>
         </div>
         <div class="containerTechnologiesContainerContainer">
             <div class="containerTechnologiesContainer">          
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachekafka/apachekafka-original-wordmark.svg" />
-                <img style="height: 70px;" src="./images/autocad-icon.svg"/>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original-wordmark.svg" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/drupal/drupal-original-wordmark.svg" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
-                <img src="./images/apps-autodesk-fusion-360.svg"/>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matlab/matlab-original.svg" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/plotly/plotly-original.svg" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/selenium/selenium-original.svg" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/solidity/solidity-original.svg" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/xml/xml-original.svg" />
+                <img id = "technologyIconAWS" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" />
+                <img id = "technologyIconAngular" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" />
+                <img id = "technologyIconKafka" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachekafka/apachekafka-original-wordmark.svg" />
+                <img id = "technologyIconCAD" style="height: 70px;" src="./images/autocad-icon.svg"/>
+                <img id = "technologyIconDocker" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original-wordmark.svg" />
+                <img id = "technologyIconDrupal" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/drupal/drupal-original-wordmark.svg" />
+                <img id = "technologyIconFigma" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
+                <img id = "technologyIconFusion" src="./images/apps-autodesk-fusion-360.svg"/>
+                <img id = "technologyIconGit" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
+                <img id = "technologyIconMatlab" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matlab/matlab-original.svg" />
+                <img id = "technologyIconPlotLib" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg" />
+                <img id = "technologyIconNodeJS" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" />
+                <img id = "technologyIconNumpy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg" />
+                <img id = "technologyIconPlotly" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/plotly/plotly-original.svg" />
+                <img id = "technologyIconSelenium" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/selenium/selenium-original.svg" />
+                <img id = "technologyIconSolidity" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/solidity/solidity-original.svg" />
+                <img id = "technologyIconXML" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/xml/xml-original.svg" />
+            </div>
+            <div id="technologyInfo" hidden>
             </div>
         </div>
         <div>
@@ -234,9 +236,11 @@
             </ul>
         </div><br/>
         <div class = "footer-container">
-            <h3 id = "footer" class = "lower-statement">© 2023 James Aliev</h3>
+            <h3 id = "footer" class = "lower-statement">© 2024 James Aliev</h3>
         </div>
         <script src="icons.js"></script>
+        <script src="technologies.js"></script>
+        <script src="wordLoading.js"></script>
         <script src="app.js"></script>
         
     </body>
