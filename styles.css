@@ -1881,11 +1881,11 @@ input, textarea {
     padding: 2rem; /* Add padding around the container as needed */
     min-height: 0vh;
     height: auto;
-    width: 80%;
+    width: 90%;
     background-color:#1D1A39;
     box-shadow: -8px 8px#F39F5A;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
     border-radius: 25px;
 }
 
@@ -1908,7 +1908,8 @@ input, textarea {
     padding: 5px;
     background-color: #FFFFFF;
     border-radius: 15px;
-    margin-right: 12.5px;
+    margin-left: 11.25px;
+    margin-right: 11.25px;
     margin-bottom: 5px;
     margin-top: 5px;
 }
