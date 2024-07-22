@@ -21,13 +21,25 @@ html {
 
 body {
     background-color: #6C567B;
-    /* background-image: url(images/background.svg), url(images/background1.svg), url(images/background.svg); */
+    background-image: url(images/background.svg), url(images/background1.svg), url(images/background.svg);
     background-size: 1920px, 1920px, 1920px;
     background-position-y: top, 67.5rem, 135rem;
     background-repeat: no-repeat, no-repeat, no-repeat;
     margin: 0px;
-    color:#6C567B;
-}   
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #0F0D23;
+    background-image: url(images/background-dark.svg), url(images/background1-dark.svg), url(images/background-dark.svg); /* Use different images for dark mode if needed */
+    background-size: 1920px, 1920px, 1920px;
+    background-position-y: top, 67.5rem, 135rem;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    margin: 0px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+} 
+
 
 h1 {
     display: flex;
@@ -743,16 +755,6 @@ img {
         text-align: left;
         padding-left: 390px;
     }
-    body {
-        background-color: #6C567B;
-        background-image: url(images/background.svg), url(images/background1.svg), url(images/background.svg);
-        background-size: 1920px, 1920px, 1920px;
-        background-position-y: top, 67.5rem, 135rem;
-        background-repeat: no-repeat, no-repeat, no-repeat;
-        margin: 0px;
-        color:#6C567B
-        
-    }   
 }
 @media only screen and (max-width: 1440px) {
     .greeting {
@@ -1935,8 +1937,47 @@ input, textarea {
     justify-content: center;
     text-align: center;
     color: #B4D8E7;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+#technologyInfo.show {
+    display: flex;
+    opacity: 1;
+    transform: scale(1);
+}
+
+#technologyInfo.hide {
+    opacity: 0;
+    transform: scale(0.95);
 }
 
 .fa-home {
+    cursor: url(images/pointer.svg), auto;
+}
+
+#toggleButton {
+    padding: 12.5px;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: url(images/pointer.svg), auto;
+    background-image: url(images/sun-solid.svg);
+    background-repeat: no-repeat;
+    transition: background-image 0.3s ease;
+}
+
+#toggleButton.dark-mode {
+    padding: 12.5px;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: url(images/pointer.svg), auto;
+    background-image: url(images/moon-solid.svg);
+    background-repeat: no-repeat;
+    transition: background-image 0.3s ease;
+}
+
+#toggleButton:hover {
     cursor: url(images/pointer.svg), auto;
 }
