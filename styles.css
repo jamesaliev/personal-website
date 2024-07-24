@@ -21,21 +21,21 @@ html {
 
 body {
     background-color: #6C567B;
-    background-image: url(images/background.svg), url(images/background1.svg), url(images/background.svg);
-    background-size: 1920px, 1920px, 1920px;
-    background-position-y: top, 67.5rem, 135rem;
-    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-image: url(images/background.svg), url(images/background1.svg), url(images/background.svg), url(images/background1.svg);
+    background-size: 1920px, 1920px, 1920px, 1920px;
+    background-position-y: top, 67.5rem, 135rem, 202.5rem;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
     margin: 0px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Dark Mode */
 body.dark-mode {
-    background-color: #0F0D23;
-    background-image: url(images/background-dark.svg), url(images/background1-dark.svg), url(images/background-dark.svg); /* Use different images for dark mode if needed */
-    background-size: 1920px, 1920px, 1920px;
-    background-position-y: top, 67.5rem, 135rem;
-    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-color: #001220;
+    background-image: url(images/background-dark.svg), url(images/background1-dark.svg), url(images/background-dark.svg), url(images/background1-dark.svg); /* Use different images for dark mode if needed */
+    background-size: 1920px, 1920px, 1920px, 1920px;
+    background-position-y: top, 67.5rem, 135rem, 202.5rem;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
     margin: 0px;
     transition: background-color 0.3s ease, color 0.3s ease;
 } 
@@ -1468,6 +1468,13 @@ img {
     border-radius: 10px;
 }
 
+.awsLogo {
+    margin-top: 20px;
+    width: auto;
+    height: 50px;
+    border-radius: 10px;
+}
+
 .backgroundImageContainer {
     position: relative;
     width: 100%;
@@ -1980,4 +1987,78 @@ input, textarea {
 
 #toggleButton:hover {
     cursor: url(images/pointer.svg), auto;
+}
+
+.shiny-div {
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #1D1A39;
+    overflow: hidden;
+    transition: background-color 0.5s;
+}
+
+.shiny-div:before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0.2));
+    transition: transform 2s, opacity 2s; /* Increased transition time */
+    transform: rotate(30deg);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.shiny-div:hover:before {
+    opacity: 1;
+    transform: rotate(30deg) translate(300%, 300%);
+}
+
+.shiny-div:hover {
+    background-color: rgba(201, 81, 212, 0.8);
+}
+
+/* Sparkles */
+.sparkles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.shiny-div:hover .sparkles {
+    opacity: 1;
+    animation: sparkle 1.5s infinite;
+}
+
+.sparkle {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: gold;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    opacity: 0;
+    animation: sparkle-move 1.5s infinite;
+    min-height: 0vh;
+}
+
+@keyframes sparkle {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@keyframes sparkle-move {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-100px); opacity: 0; }
 }
