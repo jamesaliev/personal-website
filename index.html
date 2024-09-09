@@ -1,237 +1,229 @@
 <!DOCTYPE html>
-<html lang = "en">
-    <head>
-        <meta charset= "UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-        <title>James Aliev</title>
-        <link rel="stylesheet" href="styles.css"/>
-        <link rel="shortcut icon" type = "image/x-icon" href="images/JamesAlievLogo.png">
-        <script src="https://kit.fontawesome.com/a25dbb3a9c.js" crossorigin="anonymous"></script>
-        <!-- Boilerplate -->
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel = "stylesheet" href = "styles.css">
-        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    </head>
-    
-    <div id="cursor">
-        <div class="cursor-inner"></div>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>James Aliev</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/JamesAlievLogo.png">
+    <script src="https://kit.fontawesome.com/a25dbb3a9c.js" crossorigin="anonymous"></script>
+    <!-- Boilerplate -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<div id="cursor">
+    <div class="cursor-inner"></div>
+</div>
+<script src="cursor.js"></script>
+
+<body class="preload">
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
     </div>
-    <script src="cursor.js"></script>
 
-    <body class = "preload">  
-        <div class = "loader-wrapper">
-            <span class="loader"><span class="loader-inner"></span></span>
-        </div>
-    
-        <script>
-            $(window).on("load", function(){
-                $(".loader-wrapper").fadeOut("slow");
-                $("body").removeClass("preload");
-            });
-        </script>
-        <!-- Navbar Section-->
-        <nav class="navbar">
-            <div class="navbar__container">
-                <a class = "logoimg-wrapper" href = "/"><img class = "logoimg" src = "images/JamesAlievLogo.png"></a>
-                <div class="navbar__toggle" id="mobile-menu">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-                
-                <ul class="navbar__menu">
-                    <li class="navbar__item">
-                        <a href="/" class="navbar__links"><i class="fas fa-home"></i></a>
-                    </li>
-
-                    <li class="navbar__item">
-                        <a href="about" class="navbar__links">About Me</a>
-                    </li>
-
-                    <li class="navbar__item">
-                        <a href="projects" class="navbar__links">My Projects</a>
-                    </li>
-
-                    <li class="navbar__item">
-                        <a href="contact" class="navbar__links">Contact</a>
-                    </li>
-
-                    <button id="toggleButton"></button>
-                </ul>
+    <script>
+        $(window).on("load", function () {
+            $(".loader-wrapper").fadeOut("slow");
+            $("body").removeClass("preload");
+        });
+    </script>
+    <!-- Navbar Section-->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a class="logoimg-wrapper" href="/"><img class="logoimg" src="images/JamesAlievLogo.png"></a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
-        </nav>
-        
-        <!-- Hero Section -->
-        <div class = "spacer layer1"></div>
-        <div style = "justify-content: left; display: block;">
-        
-        <div class = "greeting_container">
-            <h1 class = "greeting">Welcome I'm&nbsp<span data-value = "James Aliev"class = "greeting_name wordLoading">James Aliev</span></h1>
+
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links"><i class="fas fa-home"></i></a>
+                </li>
+
+                <li class="navbar__item">
+                    <a href="about" class="navbar__links">About Me</a>
+                </li>
+
+                <li class="navbar__item">
+                    <a href="projects" class="navbar__links">My Projects</a>
+                </li>
+
+                <li class="navbar__item">
+                    <a href="contact" class="navbar__links">Contact</a>
+                </li>
+
+                <button id="toggleButton"></button>
+            </ul>
         </div>
-        <div class = "greeting_text_container">
-            <h2 class = "greeting-text" id="element"></h2>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="spacer layer1"></div>
+    <div style="justify-content: left; display: block;">
+
+        <div class="greeting_container">
+            <h1 class="greeting">Welcome I'm&nbsp<span data-value="James Aliev" class="greeting_name wordLoading">James
+                    Aliev</span></h1>
+        </div>
+        <div class="greeting_text_container">
+            <h2 class="greeting-text" id="element"></h2>
             <!-- Load library from the CDN -->
             <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
             <!-- Setup and start animation! -->
             <script>
                 var typed = new Typed('#element', {
-                strings: [
-                    "I'm a Student at UofT", 
-                    "I'm a 3D Modeler",
-                    "I'm a 3D Printing Fanatic",
-                    "I'm a Computer Engineer",
-                    "I'm a Programmer",
-                    "I'm a PCB Designer"
-                ],
-                typeSpeed: 50,
-                backSpeed: 50,
-                loop: true,
-                showCursor: false,
+                    strings: [
+                        "I'm a Student at UofT",
+                        "I'm a 3D Modeler",
+                        "I'm a 3D Printing Fanatic",
+                        "I'm a Computer Engineer",
+                        "I'm a Programmer",
+                        "I'm a PCB Designer"
+                    ],
+                    typeSpeed: 50,
+                    backSpeed: 50,
+                    loop: true,
+                    showCursor: false,
                 });
             </script>
-        
+
         </div>
-        <!-- <div class = "greeting_text_container">
-            <h2 class = "greeting-text">If you want to know more 
-                about me then keep on scrolling.</h2>
-            <br>
-        </div> -->
-        
-        
-        
-            <!-- <div class = "card-group">
-                <div class = "big-card">
-                    
+        <br><br><br>
+        <div class="main-page-container">
+            <div style="justify-content: left;">
+                <div class="scroll_one">
+                    <h2 style="color: #1D1A39;">Let's take a look</h2>
                 </div>
-                
-                <div class = "small-card">
-
-                </div>
-                
-                <div class = "big-card">
-
-                </div>
-                
-                <div class = "small-card">
-
-                </div>
-                
-                <div class = "big-card">
-
-                </div>
-                
-                <div class = "small-card">
-
-                </div>
-
-                <div class = "big-card">
-
-                </div>
-                
-            </div> -->
-            <br><br><br>
-            <div style = "justify-content: left;">
-                <div class = "scroll_one"><h2 style = "color: #1D1A39;">Let's take a look</h2></div>
             </div>
-            
+
             <br><br><br>
-            <div style = "min-height: 0vh; justify-content: left; padding-left: 250px;">
-                <div class = "terminal_container">
-                    <div class = "top_menu">
-                        <div class = "button_holder">
-                            <button class = "red_button"></button>
-                            <button class = "yellow_button"></button>
-                            <button class = "green_button"></button>
+            <div style="min-height: 0vh; justify-content: left; padding-left: 250px;">
+                <div class="terminal_container">
+                    <div class="top_menu">
+                        <div class="button_holder">
+                            <button class="red_button"></button>
+                            <button class="yellow_button"></button>
+                            <button class="green_button"></button>
                         </div>
-                        
+
                     </div>
-                    <div class = "console">
-                        <p class = "text_in_terminal">you@homepage <span style = "color:blueviolet">MINGW64 </span><span style = "color: #F39F5A">-</span></span></p>
-                        <p class = "command">$ topsecret -notrace</p>
-                        <p class = "command">Initializing top-secret mission...</p>
-                        <p class = "command">Mission impossible theme playing...</p>
-                        <p class = "command">Accessing secure repository...</p>
-                        <p class = "command">Hacking into the mainframe...</p>
-                        <p class = "command">Uploading cute-cat-pictures.zip to the repository...</p>
-                        <p class = "command">Committing changes with a ninja commit message...</p>
-                        <p class = "command"></p>
-                        <p class = "text_in_terminal">you@homepage <span style = "color:blueviolet">MINGW64 </span><span style = "color: #F39F5A">-</span></span></p>
-                        <p class = "command">$ git add cute-cat-pictures.zip</p>
-                        <p class = "command"></p>
-                        <p class = "text_in_terminal">you@homepage <span style = "color:blueviolet">MINGW64 </span><span style = "color: #F39F5A">-</span></span></p>
-                        <p class = "command">$ git commit -m "Stealthy ninja commit 🐱"</p>
-                        <p class = "command"></p>
-                        <p class = "text_in_terminal">you@homepage <span style = "color:blueviolet">MINGW64 </span><span style = "color: #F39F5A">-</span></span></p>
-                        <p class = "command">$ git push origin master</p>
-                        <p class = "command"></p>
-                        <p class = "text_in_terminal">you@homepage <span style = "color:blueviolet">MINGW64 </span><span style = "color: #F39F5A">-</span></span></p>
-                        <p class = "command">$ websiteinfo</p>
-                        <p class = "command">You can click the buttons below or on the menu to access pages:</p>
-                        <p class = "command"><a href="/" style = "justify-content: left;" class = "navbar__links">home</a></p>
-                        <p class = "command"><a href="/about" style = "justify-content: left;" class = "navbar__links">about me</a></p>
-                        <p class = "command"><a href="/projects" style = "justify-content: left;" class = "navbar__links">projects</a></p>
-                        <p class = "command"><a href="/contact" style = "justify-content: left;" class = "navbar__links">contact me</a></p>
-                        <p class = "command"></p>
-                        <p class = "text_in_terminal">you@homepage <span style = "color:blueviolet">MINGW64 </span><span style = "color: #F39F5A">-</span></span></p>
-                        <p class = "command">$ exit</p>
-                        <p class = "command">logout</p>
+                    <div class="console">
+                        <p class="text_in_terminal">you@homepage <span style="color:blueviolet">MINGW64 </span><span
+                                style="color: #F39F5A">-</span></span></p>
+                        <p class="command">$ topsecret -notrace</p>
+                        <p class="command">Initializing top-secret mission...</p>
+                        <p class="command">Mission impossible theme playing...</p>
+                        <p class="command">Accessing secure repository...</p>
+                        <p class="command">Hacking into the mainframe...</p>
+                        <p class="command">Uploading cute-cat-pictures.zip to the repository...</p>
+                        <p class="command">Committing changes with a ninja commit message...</p>
+                        <p class="command"></p>
+                        <p class="text_in_terminal">you@homepage <span style="color:blueviolet">MINGW64 </span><span
+                                style="color: #F39F5A">-</span></span></p>
+                        <p class="command">$ git add cute-cat-pictures.zip</p>
+                        <p class="command"></p>
+                        <p class="text_in_terminal">you@homepage <span style="color:blueviolet">MINGW64 </span><span
+                                style="color: #F39F5A">-</span></span></p>
+                        <p class="command">$ git commit -m "Stealthy ninja commit 🐱"</p>
+                        <p class="command"></p>
+                        <p class="text_in_terminal">you@homepage <span style="color:blueviolet">MINGW64 </span><span
+                                style="color: #F39F5A">-</span></span></p>
+                        <p class="command">$ git push origin master</p>
+                        <p class="command"></p>
+                        <p class="text_in_terminal">you@homepage <span style="color:blueviolet">MINGW64 </span><span
+                                style="color: #F39F5A">-</span></span></p>
+                        <p class="command">$ websiteinfo</p>
+                        <p class="command">You can click the buttons below or on the menu to access pages:</p>
+                        <p class="command"><a href="/" style="justify-content: left;" class="navbar__links">home</a></p>
+                        <p class="command"><a href="/about" style="justify-content: left;" class="navbar__links">about
+                                me</a></p>
+                        <p class="command"><a href="/projects" style="justify-content: left;"
+                                class="navbar__links">projects</a></p>
+                        <p class="command"><a href="/contact" style="justify-content: left;"
+                                class="navbar__links">contact
+                                me</a></p>
+                        <p class="command"></p>
+                        <p class="text_in_terminal">you@homepage <span style="color:blueviolet">MINGW64 </span><span
+                                style="color: #F39F5A">-</span></span></p>
+                        <p class="command">$ exit</p>
+                        <p class="command">logout</p>
                     </div>
                 </div>
             </div>
-            
+
             <div></div>
-            
-            
 
-            <div style = "justify-content: right;">
-                <div class = "scroll_two"><h2 style = "color: #1D1A39;">What I Do?</h2></div>
+
+
+        </div>
+        <div class="main-page-container-right">
+            <div style="justify-content: right;">
+                <div class="scroll_two">
+                    <h2 style="color: #1D1A39;">What I Do?</h2>
+                </div>
             </div>
 
-            <div class = "whatIdo_container">
-                <div class = "whatIdo">
+            <div class="whatIdo_container">
+                <div class="whatIdo">
                     <p class="moreaboutme">
-                        I'm a <span style = "color: #F39F5A;">computer engineer</span>
-                        currently studying at the <span style = "color: #F39F5A;">University of Toronto</span>. 
-                        
+                        I'm a <span style="color: #F39F5A;">computer engineer</span>
+                        currently studying at the <span style="color: #F39F5A;">University of Toronto</span>.
+
                     </p>
                 </div>
             </div>
 
-            <div class = "whatIdo1_container">
-                <div class = "whatIdo1">
+            <div class="whatIdo1_container">
+                <div class="whatIdo1">
                     <p class="moreaboutme1">
-                        As a dedicated student, I'm passionate about leveraging technology to its fullest potential, with a keen interest in data, automation, and the fascinating world of <span style = "color: #F39F5A;">CAD design</span>.
-                        Navigating the complexities of computer engineering, I channel my enthusiasm into crafting innovative solutions and cool projects. 
-                        
+                        As a dedicated student, I'm passionate about leveraging technology to its fullest potential,
+                        with a
+                        keen interest in data, automation, and the fascinating world of <span
+                            style="color: #F39F5A;">CAD
+                            design</span>.
+                        Navigating the complexities of computer engineering, I channel my enthusiasm into crafting
+                        innovative solutions and cool projects.
+
                     </p>
                 </div>
             </div>
 
-            <div class = "whatIdo2_container">
-                <div class = "whatIdo2">
+            <div class="whatIdo2_container">
+                <div class="whatIdo2">
                     <p class="moreaboutme2">
-                        From programming in <span style = "color: #F39F5A;">Java, C, C++, Verilog, and Python</span> to diving into the intricacies of CAD design 
-                        using tools like <span style = "color: #F39F5A;">KiCad, Fusion 360, FreeCAD, and AutoCAD</span>, I enjoy the entire spectrum of technological exploration.
+                        From programming in <span style="color: #F39F5A;">Java, C, C++, Verilog, and Python</span> to
+                        diving
+                        into the intricacies of CAD design
+                        using tools like <span style="color: #F39F5A;">KiCad, Fusion 360, FreeCAD, and AutoCAD</span>, I
+                        enjoy the entire spectrum of technological exploration.
                     </p>
                 </div>
-            </div>
-            
-
             </div>
         </div>
-        <!-- <div class = "grouper" style = "min-height: 1px;"> 
+
+
+
+    </div>
+    </div>
+    <!-- <div class = "grouper" style = "min-height: 1px;"> 
             <div class = "big-card-face"></div>
         </div> -->
-        <div class = "footer-container">
-            <h3 id = "footer" class = "lower-statement" style = "padding-top: 10em;">© 2024 James Aliev</h3>
-        </div>
-        
-        <script src="app.js"></script>
-        <script src = "intersect.js"></script>
-        <script src = "wordLoading.js"></script>
-        <script src="theme.js"></script>
-    </body>
-    <div class = "spacer layer4"></div>
+    <div class="footer-container">
+        <h3 id="footer" class="lower-statement" style="padding-top: 10em;">© 2024 James Aliev</h3>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="intersect.js"></script>
+    <script src="wordLoading.js"></script>
+    <script src="theme.js"></script>
+</body>
+<div class="spacer layer4"></div>
+
 </html>
