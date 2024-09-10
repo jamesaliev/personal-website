@@ -1,308 +1,365 @@
 <!DOCTYPE html>
-<html lang = "en">
-    <head>
-        <meta charset= "UTF-8">
-        <meta name = "viewport"
-        content = "width=device-width,
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
         initial-scale=1.0">
-        <title>James Aliev | About Me</title>
-        <link rel="stylesheet" href="styles.css"/>
-        <link rel="shortcut icon" type = "image/x-icon" href="images/JamesAlievLogo.png">
-        <script src="https://kit.fontawesome.com/a25dbb3a9c.js" crossorigin="anonymous"></script>
-        <!-- Boilerplate -->
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel = "stylesheet" href = "styles.css">
-        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        
-    </head>
-    <div id="cursor">
-        <div class="cursor-inner"></div>
+    <title>James Aliev | About Me</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/JamesAlievLogo.png">
+    <script src="https://kit.fontawesome.com/a25dbb3a9c.js" crossorigin="anonymous"></script>
+    <!-- Boilerplate -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+</head>
+<div id="cursor">
+    <div class="cursor-inner"></div>
+</div>
+
+<script src="cursor.js"></script>
+
+<body class="preload">
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
     </div>
-    
-    <script src="cursor.js"></script>
-    <body class = "preload">
-        <div class = "loader-wrapper">
-            <span class="loader"><span class="loader-inner"></span></span>
-        </div>
-    
-        <script>
-            $(window).on("load", function(){
-                $(".loader-wrapper").fadeOut("slow");
-                $("body").removeClass("preload");
-            });
-        </script>        
-        <!-- Navbar Section-->
-        <nav class="navbar">
-            <div class="navbar__container">
-                
-                <a class = "logoimg-wrapper" href = "/"><img class = "logoimg" src = "images/JamesAlievLogo.png"></a>
-                
-                <div class="navbar__toggle" id="mobile-menu">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-                
-                <ul class="navbar__menu">
-                    <li class="navbar__item">
-                        <a href="/" class="navbar__links"><i class="fas fa-home"></i></a>
-                    </li>
 
-                    <li class="navbar__item">
-                        <a href="about" class="navbar__links">About Me</a>
-                    </li>
+    <script>
+        $(window).on("load", function () {
+            $(".loader-wrapper").fadeOut("slow");
+            $("body").removeClass("preload");
+        });
+    </script>
+    <!-- Navbar Section-->
+    <nav class="navbar">
+        <div class="navbar__container">
 
-                    <li class="navbar__item">
-                        <a href="projects" class="navbar__links">My Projects</a>
-                    </li>
+            <a class="logoimg-wrapper" href="/"><img class="logoimg" src="images/JamesAlievLogo.png"></a>
 
-                    <li class="navbar__item">
-                        <a href="contact" class="navbar__links">Contact</a>
-                    </li>
-                    
-                    <button id="toggleButton"></button>
-                </ul>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
-        </nav>
-        <div class = "spacer layer2"></div>
-        
-        <div class = "pLHeaderContainer">
-            <h1 data-value = "Work Experience" class = "pLHeader wordLoading">Work Experience</h1>
+
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links"><i class="fas fa-home"></i></a>
+                </li>
+
+                <li class="navbar__item">
+                    <a href="about" class="navbar__links">About Me</a>
+                </li>
+
+                <li class="navbar__item">
+                    <a href="projects" class="navbar__links">My Projects</a>
+                </li>
+
+                <li class="navbar__item">
+                    <a href="contact" class="navbar__links">Contact</a>
+                </li>
+
+                <button id="toggleButton"></button>
+            </ul>
         </div>
-        <div class="experienceContainer">
-            <div class = "workExperienceContainer">
-                <div class = "workExperience BMO">
-                    <div class = "workExperienceName-wrapper">
-                        <div class = "workExperienceName">
-                            <h3 class = "workExperienceNameText">Junior Software Developer - May 2024 to Aug 2024</h3>
-                            <img src="./images/BMOLogopng.png" class="bmoLogo">
-                        </div>
+    </nav>
+    <div class="spacer layer2"></div>
+
+    <div class="pLHeaderContainer">
+        <h1 data-value="Work Experience" class="pLHeader wordLoading">Work Experience</h1>
+    </div>
+    <div class="experienceContainer">
+        <div class="workExperienceContainer">
+            <div class="workExperience BMO">
+                <div class="workExperienceName-wrapper">
+                    <div class="workExperienceName">
+                        <h3 class="workExperienceNameText">Junior Software Developer - May 2024 to Aug 2024</h3>
+                        <img src="./images/BMOLogopng.png" class="bmoLogo">
                     </div>
-                    <div class = "workExperienceDescription">
-                        <p class="workExperienceDescriptionText">
-                            ● Assisted in the development and <span style = "color: #F39F5A;">testing of backend APIs using NodeJS</span>, contributing to the enhancement of transaction processing efficiency.<br><br>
-                            ● Developed front-end features using <span style = "color: #F39F5A;">AngularJS</span> independently, ensuring seamless user interaction and responsiveness across different devices, and making the frontend compatible with backend services <span style = "color: #F39F5A;">implemented in PHP Symfony and Node.js.</span><br><br>
-                            ● Contributed to the migration of <span style = "color: #F39F5A;">Kafka Streams (KStreams) applications from EC2 instances to Amazon ECS</span>, optimizing scalability and resource utilization within a containerized environment.<br><br>      
-                            ● <span style = "color: #F39F5A;">In progress...</span>
-                        </p>
-                    </div>
-                    
                 </div>
-            </div>
-            <div class = "workExperienceContainer">
-                <div class = "workExperience EG">
-                    <div class = "workExperienceName-wrapper">
-                        <div class = "workExperienceName">
-                            <h3 class = "workExperienceNameText">Engineering Intern - May 2023 to Aug 2023</h3> 
-                            <img src="./images/expgeo.png" class="expertGeophysicsLogo">
-                        </div>
-                    </div>
-                    
-                    
-                    <div class = "workExperienceDescription">
-                        <p class="workExperienceDescriptionText">   
-                            ● Developed and tested software in <span style = "color: #F39F5A;">C</span> for <span style = "color: #F39F5A;">airborne magnetic field monitoring systems</span>, ensuring
-                            optimal performance through meticulous design and testing procedures in critical operations<br><br>
-                            ● <span style = "color: #F39F5A;">Conducted tests</span> on <span style = "color: #F39F5A;">airborne systems components</span> including the <span style = "color: #F39F5A;">console, current generator, and power supply</span> to ensure seamless functionality, guaranteeing optimal performance and reliability
-                            for critical operations<br><br>
-                            ● <span style = "color: #F39F5A;">Analyzed the structural integrity of mounting components</span> for a <span style = "color: #F39F5A;">magnetometer system</span>, innovating
-                            and implementing 3D-printed designs to enhance reliability and efficiency within the existing
-                            system<br><br>
-                            ● Collaborated closely with the design team to <span style = "color: #F39F5A;">create load-bearing brackets for shock absorbers and
-                            monitor protection covers</span>, ensuring optimal system performance and the integration of vital
-                            components for enhanced protection         
-                        </p>
-                    </div>
-                    
+                <div class="workExperienceDescription">
+                    <p class="workExperienceDescriptionText">
+                        • Designed and implemented an online platform allowing users to deploy and manage <span style="color: #F39F5A;">Apache Kafka topics</span>,
+                        access
+                        controls, and data schemas, <span style="color: #F39F5A;">removing the need for a CLI, utilizing Angular, NodeJS, Symfony, and
+                        Drupal</span><br><br>
+                        • Created and optimized <span style="color: #F39F5A;">Python scripts</span> to proactively monitor <span style="color: #F39F5A;">Apache Kafka connectors</span>,
+                        automating real-time
+                        alerts and enhancing operational efficiency across the team management<br><br>
+                        • Played a pivotal role in migrating BMO’s internal <span style="color: #F39F5A;">Apache Kafka streams from EC2 to ECS</span>, resulting in
+                        around a
+                        <span style="color: #F39F5A;">20% improvement</span> in system performance and a reduction in operational costs.<br><br>
+                    </p>
                 </div>
+
             </div>
         </div>
+        <div class="workExperienceContainer">
+            <div class="workExperience EG">
+                <div class="workExperienceName-wrapper">
+                    <div class="workExperienceName">
+                        <h3 class="workExperienceNameText">Engineering Intern - May 2023 to Aug 2023</h3>
+                        <img src="./images/expgeo.png" class="expertGeophysicsLogo">
+                    </div>
+                </div>
 
-        <div class = "pLHeaderContainer">
-            <h1 data-value = "Awards and Certifications" class = "pLHeader wordLoading">Awards and Certifications</h1>
-        </div> 
-        <div class="experienceContainer">
-            <div class = "workExperienceContainer">
-                <div class = "workExperience BMO shiny-div">
-                    <div class="sparkles">
-                        <!-- Multiple sparkle elements -->
-                        <div class="sparkles" id="sparkles-container"></div>
-                    </div>
-                    <div class = "workExperienceName-wrapper">
-                        <div class = "workExperienceName">
-                            <h3 class = "workExperienceNameText shine-text">1st Place - BMO InnoV8 Hackathon</h3>
-                            <img src="./images/innov8.png" class="bmoLogo">
-                        </div>
-                    </div>
-                    <div class = "workExperienceDescription">
-                        <p class="workExperienceDescriptionText">
-        ● Secured <span style="color: #F39F5A;">1st place</span> at the BMO Innov8 Hackathon.<br><br>
-        ● Over 300 BMO employees participated, with <span style="color: #F39F5A;">30 teams</span> competing.<br><br>
-        ● Conceptualized and developed an innovative solution during the hackathon, showcasing creativity and technical skills.<br><br>
-        ● Utilized the following technologies:
-        <span style="color: #F39F5A;">Node.js</span> for the backend,
-        <span style="color: #F39F5A;">Angular</span> for the frontend,
-        and <span style="color: #F39F5A;">Figma</span> for design and prototyping.<br><br>
-        ● The project demonstrated excellence in design and implementation, contributing to the success of the team and the overall competition.<br><br>
-                        </p>
-                        
-                    </div>
-                    
+
+                <div class="workExperienceDescription">
+                    <p class="workExperienceDescriptionText">
+                        ● Developed and tested software in <span style="color: #F39F5A;">C</span> for <span
+                            style="color: #F39F5A;">airborne magnetic field monitoring systems</span>, ensuring
+                        optimal performance through meticulous design and testing procedures in critical
+                        operations<br><br>
+                        ● <span style="color: #F39F5A;">Conducted tests</span> on <span style="color: #F39F5A;">airborne
+                            systems components</span> including the <span style="color: #F39F5A;">console, current
+                            generator, and power supply</span> to ensure seamless functionality, guaranteeing optimal
+                        performance and reliability
+                        for critical operations<br><br>
+                        ● <span style="color: #F39F5A;">Analyzed the structural integrity of mounting components</span>
+                        for a <span style="color: #F39F5A;">magnetometer system</span>, innovating
+                        and implementing 3D-printed designs to enhance reliability and efficiency within the existing
+                        system<br><br>
+                        ● Collaborated closely with the design team to <span style="color: #F39F5A;">create load-bearing
+                            brackets for shock absorbers and
+                            monitor protection covers</span>, ensuring optimal system performance and the integration of
+                        vital
+                        components for enhanced protection
+                    </p>
                 </div>
-            </div>
-            <div class="workExperienceContainer">
-                <div class="workExperience EG">
-                    <div class="workExperienceName-wrapper">
-                        <div class="workExperienceName">
-                            <h3 class="workExperienceNameText">AWS Certified Cloud Practitioner - Oct 2021 to Oct 2024</h3>
-                            <img src="./images/aws.jpg" class="awsLogo">
-                        </div>
-                    </div>
-                    
-                    <div class="workExperienceDescription">
-                        <p class="workExperienceDescriptionText">
-                            ● Secured AWS Certified Cloud Practitioner certification, demonstrating a comprehensive understanding of AWS Cloud concepts, services, and terminology.<br><br>
-                            ● Developed and managed cloud infrastructure using <span style="color: #F39F5A;">AWS services</span> such as <span style="color: #F39F5A;">EC2, S3, and Lambda</span>, ensuring efficient and scalable solutions for various applications.<br><br>
-                            ● <span style="color: #F39F5A;">Implemented security best practices</span> using <span style="color: #F39F5A;">IAM policies and roles</span> to safeguard sensitive data and maintain compliance with industry standards.<br><br>
-                            ● <span style="color: #F39F5A;">Conducted cost analysis and optimization</span> using <span style="color: #F39F5A;">AWS Cost Explorer and Trusted Advisor</span>, reducing operational expenses and enhancing resource utilization.<br><br>
-                            ● Collaborated with development teams to <span style="color: #F39F5A;">migrate on-premises applications to the AWS Cloud</span>, leveraging cloud-native services to improve performance, scalability, and availability.
-                        </p>
-                    </div>
-                    
-                </div>
+
             </div>
         </div>
+    </div>
 
-        <div class = "pLHeaderContainer">
-            <h1 data-value = "Programming Languages" class = "pLHeader wordLoading">Programming Languages</h1><br/>
+    <div class="pLHeaderContainer">
+        <h1 data-value="Awards and Certifications" class="pLHeader wordLoading">Awards and Certifications</h1>
+    </div>
+    <div class="experienceContainer">
+        <div class="workExperienceContainer">
+            <div class="workExperience BMO shiny-div">
+                <div class="sparkles">
+                    <!-- Multiple sparkle elements -->
+                    <div class="sparkles" id="sparkles-container"></div>
+                </div>
+                <div class="workExperienceName-wrapper">
+                    <div class="workExperienceName">
+                        <h3 class="workExperienceNameText shine-text">1st Place - BMO InnoV8 Hackathon</h3>
+                        <img src="./images/innov8.png" class="bmoLogo">
+                    </div>
+                </div>
+                <div class="workExperienceDescription">
+                    <p class="workExperienceDescriptionText">
+                        ● Secured <span style="color: #F39F5A;">1st place</span> at the BMO Innov8 Hackathon.<br><br>
+                        ● Over 300 BMO employees participated, with <span style="color: #F39F5A;">30 teams</span>
+                        competing.<br><br>
+                        ● Conceptualized and developed an innovative solution during the hackathon, showcasing
+                        creativity and technical skills.<br><br>
+                        ● Utilized the following technologies:
+                        <span style="color: #F39F5A;">Node.js</span> for the backend,
+                        <span style="color: #F39F5A;">Angular</span> for the frontend,
+                        and <span style="color: #F39F5A;">Figma</span> for design and prototyping.<br><br>
+                        ● The project demonstrated excellence in design and implementation, contributing to the success
+                        of the team and the overall competition.<br><br>
+                    </p>
+
+                </div>
+
+            </div>
         </div>
-        <div class="svgChromaticContainer">
-            <i class="fa-solid fa-book book"></i>
-            <svg width="1200" height="30" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+        <div class="workExperienceContainer">
+            <div class="workExperience EG">
+                <div class="workExperienceName-wrapper">
+                    <div class="workExperienceName">
+                        <h3 class="workExperienceNameText">AWS Certified Cloud Practitioner - Oct 2021 to Oct 2024</h3>
+                        <img src="./images/aws.jpg" class="awsLogo">
+                    </div>
+                </div>
+
+                <div class="workExperienceDescription">
+                    <p class="workExperienceDescriptionText">
+                        ● Secured AWS Certified Cloud Practitioner certification, demonstrating a comprehensive
+                        understanding of AWS Cloud concepts, services, and terminology.<br><br>
+                        ● Developed and managed cloud infrastructure using <span style="color: #F39F5A;">AWS
+                            services</span> such as <span style="color: #F39F5A;">EC2, S3, and Lambda</span>, ensuring
+                        efficient and scalable solutions for various applications.<br><br>
+                        ● <span style="color: #F39F5A;">Implemented security best practices</span> using <span
+                            style="color: #F39F5A;">IAM policies and roles</span> to safeguard sensitive data and
+                        maintain compliance with industry standards.<br><br>
+                        ● <span style="color: #F39F5A;">Conducted cost analysis and optimization</span> using <span
+                            style="color: #F39F5A;">AWS Cost Explorer and Trusted Advisor</span>, reducing operational
+                        expenses and enhancing resource utilization.<br><br>
+                        ● Collaborated with development teams to <span style="color: #F39F5A;">migrate on-premises
+                            applications to the AWS Cloud</span>, leveraging cloud-native services to improve
+                        performance, scalability, and availability.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="pLHeaderContainer">
+        <h1 data-value="Programming Languages" class="pLHeader wordLoading">Programming Languages</h1><br />
+    </div>
+    <div class="svgChromaticContainer">
+        <i class="fa-solid fa-book book"></i>
+        <svg style="display:flex; justify-content: center; align-items: center;" width="1050" height="30" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
                     <stop offset="0%" style="stop-color:#7e6492;stop-opacity:1" />
                     <stop offset="1%" style="stop-color:#8f00ff;stop-opacity:1" />
                     <stop offset="50%" style="stop-color:#ec55bf;stop-opacity:1" />
                     <stop offset="75%" style="stop-color:#ff618b;stop-opacity:1" /> <!-- Added color -->
                     <stop offset="100%" style="stop-color:#ffdd00;stop-opacity:1" /> <!-- Added color -->
-                    </linearGradient>
-                </defs>
-                <rect x="10" y="12.5" rx="2.5" ry="2.5" width="1180" height="5" style="fill:url(#gradient);" />
-            </svg>
-            <i class="fa-solid fa-star star"></i>
-        </div>
-        <div class="containerIconsContainerContainer">
-            <div class="containerIconsContainer">
-                <div id="container" class="containerIcons">
-                    <div class="column" style="--column: 1;">
-                      <div class="circle" style="--index: 1;">
-                        
-                <img class="programmingLanguageIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" />
-              
-                      </div>
-                    </div>
-                    <div class="column" style="--column: 2;">
-                      <div class="circle" style="--index: 1;">
-                        
-                <img class="programmingLanguageIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" />
-              
-                      </div>
-                      <div class="circle" style="--index: 2;">
-                        
-                <img class="programmingLanguageIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" />
-              
-                      </div>
-                    </div>
-                    <div class="column" style="--column: 3;">
-                      <div class="circle" style="--index: 1;">
-                        
-                <img class="programmingLanguageIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
-              
-                      </div>
-                      <div class="circle" style="--index: 2;">
-                        
-                <img class="programmingLanguageIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
-              
-                      </div>
-                      <div class="circle" style="--index: 3;">
-                        
-                <img class="programmingLanguageIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
-              
-                      </div>
-                    </div>
-                    <div class="column" style="--column: 2;">
-                      <div class="circle" style="--index: 1;">
-                        
-                <img class="programmingLanguageIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wasm/wasm-original.svg" />
-              
-                      </div>
-                      <div class="circle" style="--index: 2;">
-                        
-                <img class="programmingLanguageIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" />
-              
-                      </div>
-                    </div>
-                    <div class="column" style="--column: 1;">
-                      <div class="circle" style="--index: 1;">
-                        
-                <img class="programmingLanguageIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/symfony/symfony-original.svg" />
-              
-                      </div>
-                    </div>
-                  </div>
-                
-                  <div id="switch" class="switch"></div>
-            </div>
-        </div>
+                </linearGradient>
+            </defs>
+            <rect x="10" y="12.5" rx="2.5" ry="2.5" width="1030" height="5" style="fill:url(#gradient);" />
+        </svg>
+        <i class="fa-solid fa-star star"></i>
+    </div>
+    <div class="containerIconsContainerContainer">
+        <div class="containerIconsContainer">
+            <div id="container" class="containerIcons">
+                <div class="column" style="--column: 1;">
+                    <div class="circle" style="--index: 1;">
 
-        <div class = "pLHeaderContainer">
-            <h1 data-value = "Technologies" class = "pLHeader wordLoading">Technologies</h1><br/>
-        </div>
-        <div class="containerTechnologiesContainerContainer">
-            <div class="containerTechnologiesContainer">          
-                <img id = "technologyIconAWS" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" />
-                <img id = "technologyIconAngular" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" />
-                <img id = "technologyIconKafka" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachekafka/apachekafka-original-wordmark.svg" />
-                <img id = "technologyIconCAD" style="height: 70px;" src="./images/autocad-icon.svg"/>
-                <img id = "technologyIconDocker" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original-wordmark.svg" />
-                <img id = "technologyIconDrupal" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/drupal/drupal-original-wordmark.svg" />
-                <img id = "technologyIconFigma" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
-                <img id = "technologyIconFusion" src="./images/apps-autodesk-fusion-360.svg"/>
-                <img id = "technologyIconGit" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
-                <img id = "technologyIconMatlab" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matlab/matlab-original.svg" />
-                <img id = "technologyIconPlotLib" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg" />
-                <img id = "technologyIconNodeJS" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" />
-                <img id = "technologyIconNumpy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg" />
-                <img id = "technologyIconPlotly" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/plotly/plotly-original.svg" />
-                <img id = "technologyIconSelenium" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/selenium/selenium-original.svg" />
-                <img id = "technologyIconSolidity" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/solidity/solidity-original.svg" />
-                <img id = "technologyIconXML" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/xml/xml-original.svg" />
-            </div>
-            <div id="technologyInfo" hidden>
-            </div>
-        </div>
-        <div>
-            <ul class = "socials">
-                <p><span title = "Click on me!"><a href="https://github.com/jamesaliev" class = "socials__links"><i  class="fa-brands fa-square-github socials_icon githubIcon"></i></a></span></p>
-                <p><span title = "Click on me!"><a href="https://www.linkedin.com/in/jamesaliev/" class = "socials__links"><i class="fa-brands fa-linkedin socials_icon linkedInIcon"></i></a><span><p>
-                <p><span title = "Click on me!"><a href="https://www.instagram.com/james.aliev/" class = "socials__links"><i class="fa-brands fa-square-instagram socials_icon instagramIcon"></i></a></span></p>
-            </ul>
-        </div><br/>
-        <div class = "footer-container">
-            <h3 id = "footer" class = "lower-statement">© 2024 James Aliev</h3>
-        </div>
+                        <img class="programmingLanguageIcon"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" />
 
-        <script src="icons.js"></script>
-        <script src="technologies.js"></script>
-        <script src="wordLoading.js"></script>
-        <script src="app.js"></script>
-        <script src="theme.js"></script>
-        <script src="sparkles.js"></script>
-        
-    </body>
-    <div class = "spacer layer5"></div>
-        
+                    </div>
+                </div>
+                <div class="column" style="--column: 2;">
+                    <div class="circle" style="--index: 1;">
+
+                        <img class="programmingLanguageIcon"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" />
+
+                    </div>
+                    <div class="circle" style="--index: 2;">
+
+                        <img class="programmingLanguageIcon"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" />
+
+                    </div>
+                </div>
+                <div class="column" style="--column: 3;">
+                    <div class="circle" style="--index: 1;">
+
+                        <img class="programmingLanguageIcon"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+
+                    </div>
+                    <div class="circle" style="--index: 2;">
+
+                        <img class="programmingLanguageIcon"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+
+                    </div>
+                    <div class="circle" style="--index: 3;">
+
+                        <img class="programmingLanguageIcon"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
+
+                    </div>
+                </div>
+                <div class="column" style="--column: 2;">
+                    <div class="circle" style="--index: 1;">
+
+                        <img class="programmingLanguageIcon"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wasm/wasm-original.svg" />
+
+                    </div>
+                    <div class="circle" style="--index: 2;">
+
+                        <img class="programmingLanguageIcon"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" />
+
+                    </div>
+                </div>
+                <div class="column" style="--column: 1;">
+                    <div class="circle" style="--index: 1;">
+
+                        <img class="programmingLanguageIcon"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/symfony/symfony-original.svg" />
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="switch" class="switch"></div>
+        </div>
+    </div>
+
+    <div class="pLHeaderContainer">
+        <h1 data-value="Technologies" class="pLHeader wordLoading">Technologies</h1><br />
+    </div>
+    <div class="containerTechnologiesContainerContainer">
+        <div class="containerTechnologiesContainer">
+            <img id="technologyIconAWS"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" />
+            <img id="technologyIconAngular"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" />
+            <img id="technologyIconKafka"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachekafka/apachekafka-original-wordmark.svg" />
+            <img id="technologyIconCAD" style="height: 70px;" src="./images/autocad-icon.svg" />
+            <img id="technologyIconDocker"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original-wordmark.svg" />
+            <img id="technologyIconDrupal"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/drupal/drupal-original-wordmark.svg" />
+            <img id="technologyIconFigma"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
+            <img id="technologyIconFusion" src="./images/apps-autodesk-fusion-360.svg" />
+            <img id="technologyIconGit"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
+            <img id="technologyIconMatlab"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matlab/matlab-original.svg" />
+            <img id="technologyIconPlotLib"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg" />
+            <img id="technologyIconNodeJS"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" />
+            <img id="technologyIconNumpy"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg" />
+            <img id="technologyIconPlotly"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/plotly/plotly-original.svg" />
+            <img id="technologyIconSelenium"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/selenium/selenium-original.svg" />
+            <img id="technologyIconSolidity"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/solidity/solidity-original.svg" />
+            <img id="technologyIconXML"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/xml/xml-original.svg" />
+        </div>
+        <div id="technologyInfo" hidden>
+        </div>
+    </div>
+    <div>
+        <ul class="socials">
+            <p><span title="Click on me!"><a href="https://github.com/jamesaliev" class="socials__links"><i
+                            class="fa-brands fa-square-github socials_icon githubIcon"></i></a></span></p>
+            <p><span title="Click on me!"><a href="https://www.linkedin.com/in/jamesaliev/" class="socials__links"><i
+                            class="fa-brands fa-linkedin socials_icon linkedInIcon"></i></a><span>
+                        <p>
+                        <p><span title="Click on me!"><a href="https://www.instagram.com/james.aliev/"
+                                    class="socials__links"><i
+                                        class="fa-brands fa-square-instagram socials_icon instagramIcon"></i></a></span>
+                        </p>
+        </ul>
+    </div><br />
+    <div class="footer-container">
+        <h3 id="footer" class="lower-statement">© 2024 James Aliev</h3>
+    </div>
+
+    <script src="icons.js"></script>
+    <script src="technologies.js"></script>
+    <script src="wordLoading.js"></script>
+    <script src="app.js"></script>
+    <script src="theme.js"></script>
+    <script src="sparkles.js"></script>
+
+</body>
+<div class="spacer layer5"></div>
+
 </html>

@@ -753,10 +753,10 @@ img {
 
   body {
     background-image: url(images/background.svg), url(images/background1.svg),
-      url(images/background.svg);
-    background-size: 1920px, 1920px, 1920px;
-    background-position-y: top, 67.5rem, 135rem;
-    background-repeat: no-repeat, no-repeat, no-repeat;
+    url(images/background.svg), url(images/background1.svg);
+    background-size: 1920px, 1920px, 1920px, 1920px;
+    background-position-y: top, 67.5rem, 135rem, 202.5rem;;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
   }
 
   .main-page-container {
@@ -1868,18 +1868,23 @@ a.labs-follow-me {
   justify-content: center;
   align-items: center;
   background: #1d1a39;
-  margin-left: 17.5%;
-  margin-right: 17.5%;
+  margin-left: 20%;
+  margin-right: 20%;
   margin-bottom: 10px;
   border-radius: 25px;
+  width: 60%;
+  padding-left: 0.5%;
+  padding-right: 0.5%;
 }
 
 .book {
   color: #b4d8e7;
+  padding-right: 1%;
 }
 
 .star {
   color: #f0e68c;
+  padding-left: 1%;
 }
 
 .programmingLanguageIcon {
@@ -2094,3 +2099,4 @@ a.labs-follow-me {
     opacity: 0;
   }
 }
+
