@@ -777,6 +777,16 @@ img {
   }
 }
 @media only screen and (max-width: 1440px) {
+  .workExperienceContainer {
+    max-width: 1250px;
+  }
+
+  .containerIconsContainerContainer {
+    max-width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
   .greeting {
     text-align: center;
     align-items: center;
@@ -1304,6 +1314,8 @@ img {
   min-height: 0vh;
   justify-content: center;
 }
+
+
 
 .workExperience.BMO {
   min-height: 0vh;

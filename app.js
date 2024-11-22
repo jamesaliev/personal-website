@@ -46,7 +46,6 @@ var asciiframe = () => {
       }
     }
   }
-  pretag.innerHTML = b.join("");
 };
 
 setInterval(asciiframe, 50)
